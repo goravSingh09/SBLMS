@@ -1,0 +1,275 @@
+/* ===========================================
+   SHREE BALAJI LIBRARY MANAGEMENT SYSTEM
+   Author : Gorav Singh
+=========================================== */
+
+:root{
+    --primary:#1E3A5F;
+    --secondary:#CFAF5A;
+    --light:#F8F6F1;
+    --dark:#2F2F2F;
+    --white:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:var(--light);
+
+    color:var(--dark);
+
+}
+
+/* ==========================
+        NAVBAR
+========================== */
+
+.navbar{
+
+    background:white !important;
+
+    padding:15px 0;
+
+}
+
+.navbar-brand h5{
+
+    color:var(--primary);
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+.nav-link{
+
+    font-weight:600;
+
+    margin-left:18px;
+
+    color:#444 !important;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:var(--secondary)!important;
+
+}
+
+/* ==========================
+       BUTTON
+========================== */
+
+.btn-warning{
+
+    background:var(--secondary);
+
+    border:none;
+
+    color:white;
+
+    padding:12px 28px;
+
+    transition:.3s;
+
+}
+
+.btn-warning:hover{
+
+    background:#b28d39;
+
+    transform:translateY(-2px);
+
+}
+
+.btn-outline-dark{
+
+    padding:12px 28px;
+
+}
+
+/* ==========================
+        HERO
+========================== */
+
+section{
+
+    padding:80px 0;
+
+}
+
+h1{
+
+    color:var(--primary);
+
+    font-family:'Poppins',sans-serif;
+
+    line-height:1.2;
+
+}
+
+.lead{
+
+    font-size:22px;
+
+}
+
+img{
+
+    max-width:100%;
+
+}
+
+.shadow-lg{
+
+    border-radius:20px;
+
+}
+/* ==========================
+        CARDS
+========================== */
+
+.card{
+    border-radius:20px;
+    transition:0.3s ease;
+    background:#fff;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.12);
+}
+
+.card h3{
+    font-size:48px;
+}
+
+.card h5{
+    margin-top:15px;
+    font-weight:600;
+    color:var(--primary);
+}
+
+/* ==========================
+        ABOUT
+========================== */
+
+.bg-white{
+    background:#fff !important;
+}
+
+/* ==========================
+      CONTACT
+========================== */
+
+iframe{
+    border-radius:20px;
+}
+
+.bi{
+    margin-right:8px;
+}
+
+/* ==========================
+        FOOTER
+========================== */
+
+footer{
+    background:var(--primary)!important;
+}
+
+footer h5{
+    font-family:'Poppins',sans-serif;
+}
+
+footer p{
+    margin-bottom:5px;
+}
+
+/* ==========================
+    WHATSAPP BUTTON
+========================== */
+
+.position-fixed{
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.position-fixed:hover{
+    transform:scale(1.08);
+}
+
+/* ==========================
+        RESPONSIVE
+========================== */
+
+@media(max-width:991px){
+
+    .navbar-brand h5{
+        font-size:18px;
+    }
+
+    h1{
+        font-size:42px;
+        text-align:center;
+    }
+
+    .lead{
+        text-align:center;
+    }
+
+    .btn{
+        margin-top:10px;
+    }
+
+    .col-lg-6{
+        text-align:center;
+    }
+
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:34px;
+    }
+
+    .lead{
+        font-size:18px;
+    }
+
+    section{
+        padding:60px 0;
+    }
+
+}
+
+/* ==========================
+      SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--secondary);
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+    background:#eee;
+}
