@@ -1,0 +1,215 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-10">
+
+            <div class="card shadow-lg border-0 rounded-4">
+
+                <div class="card-header bg-primary text-white text-center py-4">
+
+                    <h2 class="mb-2">
+                        📚 Student Admission Form
+                    </h2>
+
+                    <p class="mb-0">
+                        Shree Bala Ji Adhyayan Kendra Library
+                    </p>
+
+                </div>
+
+                <div class="card-body p-5">
+
+                    <form method="POST" enctype="multipart/form-data">
+
+                        {{ form.hidden_tag() }}
+
+                        <h4 class="text-primary mb-4">
+                            Personal Details
+                        </h4>
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+
+                                {{ form.full_name.label(class="form-label fw-bold") }}
+
+                                {{ form.full_name(class="form-control form-control-lg") }}
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                {{ form.father_name.label(class="form-label fw-bold") }}
+
+                                {{ form.father_name(class="form-control form-control-lg") }}
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                {{ form.mother_name.label(class="form-label fw-bold") }}
+
+                                {{ form.mother_name(class="form-control form-control-lg") }}
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                {{ form.dob.label(class="form-label fw-bold") }}
+
+                                {{ form.dob(class="form-control form-control-lg") }}
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                {{ form.gender.label(class="form-label fw-bold") }}
+
+                                {{ form.gender(class="form-select form-select-lg") }}
+
+                            </div>
+
+                        </div>
+
+                        <hr class="my-5">
+
+                        <h4 class="text-primary mb-4">
+                            Contact Details
+                        </h4>
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+
+                                {{ form.mobile.label(class="form-label fw-bold") }}
+
+                                {{ form.mobile(class="form-control form-control-lg") }}
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                {{ form.whatsapp.label(class="form-label fw-bold") }}
+
+                                {{ form.whatsapp(class="form-control form-control-lg") }}
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                {{ form.emergency_contact.label(class="form-label fw-bold") }}
+
+                                {{ form.emergency_contact(class="form-control form-control-lg") }}
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                {{ form.aadhaar_number.label(class="form-label fw-bold") }}
+
+                                {{ form.aadhaar_number(class="form-control form-control-lg") }}
+
+                            </div>
+
+                            <div class="col-12 mb-3">
+
+                                {{ form.address.label(class="form-label fw-bold") }}
+
+                                {{ form.address(class="form-control", rows="4") }}
+
+                            </div>
+
+                        </div>
+                                                <hr class="my-5">
+
+                        <h4 class="text-primary mb-4">
+                            Study Details
+                        </h4>
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+
+                                {{ form.preparing_for.label(class="form-label fw-bold") }}
+
+                                {{ form.preparing_for(class="form-select form-select-lg") }}
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                {{ form.seat_mode.label(class="form-label fw-bold") }}
+
+                                {{ form.seat_mode(class="form-select form-select-lg") }}
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                {{ form.monthly_fee.label(class="form-label fw-bold") }}
+
+                                {{ form.monthly_fee(class="form-control form-control-lg") }}
+
+                            </div>
+
+                        </div>
+
+                        <hr class="my-5">
+
+                        <h4 class="text-primary mb-4">
+                            Upload Documents
+                        </h4>
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-4">
+
+                                {{ form.photo.label(class="form-label fw-bold") }}
+
+                                {{ form.photo(class="form-control form-control-lg") }}
+
+                                <div class="form-text">
+                                    Upload passport size photo (JPG / PNG)
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+
+                                {{ form.aadhaar_photo.label(class="form-label fw-bold") }}
+
+                                {{ form.aadhaar_photo(class="form-control form-control-lg") }}
+
+                                <div class="form-text">
+                                    Upload Aadhaar (Image or PDF)
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <hr class="my-5">
+
+                        <div class="text-center">
+
+                            {{ form.submit(class="btn btn-primary btn-lg px-5") }}
+
+                        </div>
+                                            </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
